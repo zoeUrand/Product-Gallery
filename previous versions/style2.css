@@ -1,0 +1,64 @@
+h1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.image {
+  width: calc(100%/3 -30px);
+  height: 300px;
+  object-fit: cover;
+}
