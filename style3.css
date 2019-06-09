@@ -1,0 +1,233 @@
+/* Box shadow effect */
+.button,
+.hidden-icon-button,
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9,
+.topnav {
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, .2);
+}
+
+/* Header */
+h1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 60px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Sub-container*/
+.sub-container {
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.topnav a.leihs {
+  flex-grow: 1;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.topnav a:hover {
+  color: rgb(102, 66, 246);
+  transition: color .3s ease-in-out;
+}
+
+/* Image hover */
+.image-container {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container:hover img {
+  opacity: 0.2;
+}
+
+.image-container:hover .text {
+  display: block;
+}
+
+/* Text */
+.text {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: rgb(102, 66, 246);
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+/* Images */
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9 {
+  width: calc(100%/3 -10px);
+  height: 300px;
+  object-fit: cover;
+  /* margin: 20px; */
+  /* border-radius: 20px; */
+}
+
+/* Control */
+.control {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: none;
+  margin: 10px;
+  height: 140px;
+}
+
+/* Button */
+.button {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 80px;
+  background-color: rgb(132, 236, 255);
+  position: absolute;
+  /* move the element so that the left edge starts in the center of the black container  */
+  left: 50%;
+  /* move it back by 50% of its own width */
+  transform: translateX(-50%);
+  transition: all 1s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(66, 207, 234);
+  cursor: pointer;
+}
+
+.button--shrink {
+  /* border-radius: 15px; */
+  width: 150px;
+}
+
+/* Counter */
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.counter-container input {
+  background: none;
+  border: none;
+  text-align: center;
+  margin: -100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.counter-button {
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.counter-button:focus {
+  outline: none;
+}
+
+/* Hidden Icon Button*/
+.hidden-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(132, 236, 255);
+  position: absolute;
+  right: -49px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.hidden-icon-button:hover {
+  background-color: rgb(66, 207, 234);
+  cursor: pointer;
+}
+
+.hidden-icon-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.left {
+  left: 0;
+  transform: translateX(0);
+}
+
+.show {
+  right: 0;
+  opacity: 1;
+}
